@@ -1,8 +1,4 @@
-if has("nvim")
-  let g:plug_home = stdpath('data') . '/plugged'
-endif
-
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -31,9 +27,6 @@ if has("nvim")
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'akinsho/toggleterm.nvim'
 endif
-
-Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 call plug#end()
 
